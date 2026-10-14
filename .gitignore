@@ -1,0 +1,10 @@
+# Entorno virtual (muy pesado, cada usuario creará el suyo)
+mcp_env/
+
+# Archivos de resultados generados por el motor (se crean en cada corrida)
+*.out
+*.err
+*.log
+
+# Archivos temporales de Python
+__pycache__/
