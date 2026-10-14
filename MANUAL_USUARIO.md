@@ -8,20 +8,16 @@ Este proyecto transforma la manera en que interactuamos con el modelo de calidad
 
 ---
 
-## Prerrequisitos Críticos: El Motor y la Plantilla Base
-El agente de IA modifica datos, pero necesita el motor matemático original y un archivo base para empezar.
+## Prerrequisitos Críticos: La Plantilla Base (.q2k)
+El motor de Fortran (`q2kfortran3b2.exe`) ya viene incluido en este repositorio, por lo que está listo para usarse. Sin embargo, el agente de IA necesita un archivo base `.q2k` de tu río para empezar a trabajar.
 
-**Paso A: Obtener el motor de Fortran**
-1. Ve a la página oficial: [www.qual2k.com](http://www.qual2k.com) y descarga el archivo `.zip` del modelo.
-2. Descomprímelo en una carpeta de tu PC (por ejemplo: `C:\QUAL2K_Temp`).
-3. Busca el archivo `q2kfortran3b2.exe`. Cópialo y pégalo en la carpeta de este proyecto MCP.
-
-**Paso B: Generar la plantilla base (.q2k) — ¡Cuidado con la Celda B10!**
-1. Abre el archivo Excel de QUAL2K que acabas de descargar.
-2. Ve a la hoja principal (pestaña **QUAL2K**).
-3. **PASO CRÍTICO:** Busca la celda **B10** (*"Path to directory..."*). Modifica esa celda pegando la ruta exacta de tu carpeta (ej. `C:\QUAL2K_Temp`). Si esta ruta es incorrecta, el Excel arrojará un error.
-4. Haz clic en el botón **"Run Fortran"** en el Excel. Esto generará automáticamente un archivo de texto con extensión `.q2k` (ej. `Escenario.q2k`).
-5. Copia ese archivo `.q2k` y pégalo en la carpeta de este proyecto MCP.
+**Paso Único: Generar la plantilla base (.q2k) — ¡Cuidado con la Celda B10!**
+1. Ve a la página oficial: [www.qual2k.com](http://www.qual2k.com) y descarga el archivo `.zip` del modelo completo.
+2. Descomprímelo en cualquier carpeta temporal y abre el archivo Excel de QUAL2K.
+3. Ve a la hoja principal (pestaña **QUAL2K**).
+4. **PASO CRÍTICO:** Busca la celda **B10** (*"Path to directory..."*). Modifica esa celda pegando la ruta exacta de tu carpeta temporal. Si esta ruta es incorrecta, el Excel arrojará un error.
+5. Haz clic en el botón **"Run Fortran"** en el Excel. Esto generará automáticamente un archivo de texto con extensión `.q2k` (ej. `Escenario.q2k`).
+6. Copia ese archivo `.q2k` y pégalo en la carpeta de este proyecto MCP. A partir de aquí, la IA toma el control.
 
 ---
 

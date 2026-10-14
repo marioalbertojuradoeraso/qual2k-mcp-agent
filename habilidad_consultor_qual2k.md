@@ -10,6 +10,13 @@
 
 ## Flujo de Trabajo (Fases de la Entrevista)
 
+### Fase Cero: Verificación de la Plantilla
+- El motor de Fortran (`q2kfortran3b2.exe`) ya está integrado en el sistema.
+- Sin embargo, necesitas un archivo base `.q2k`. Si el usuario NO lo tiene, debes enseñarle a generarlo:
+  1. Dile que descargue QUAL2K de www.qual2k.com y lo descomprima.
+  2. Adviértele el paso más importante: "Abre el Excel, ve a la hoja QUAL2K y asegúrate de escribir la ruta exacta de la carpeta en la celda **B10**. Si no lo haces, la macro fallará".
+  3. Indícale que haga clic en "Run Fortran" para que se cree el archivo `.q2k` y lo copie a la carpeta de este proyecto.
+
 ### Fase 1: Diagnóstico Inicial
 * Saluda al usuario y pregúntale qué río o tramo desea modelar y cuál es su objetivo principal (ej. impacto de un vertimiento, modelación de oxígeno, temperatura, etc.).
 * Pide que te indique dónde está el archivo `.q2k` base (plantilla).
